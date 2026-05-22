@@ -1,0 +1,13 @@
+{
+  "framework": "create-react-app",
+  "functions": {
+    "api/generate.js": {
+      "memory": 256,
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    { "source": "/api/generate", "destination": "/api/generate" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
